@@ -1,0 +1,86 @@
+@import 'https://fonts.googleapis.com/css?family=Barlow+Condensed';
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}  
+html, body{
+    height: 100%;    
+}
+body{
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*App container*/
+.app-container{
+    max-width: 450px;
+    width: 100%;
+    padding: 25px;
+    
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+}
+.app-container h3{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0 0 20px;
+    text-align: center;
+    font-family: "calibri", sans-serif;
+    color: #3B5998;
+}
+/*New task*/
+.new-task-container{
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: justify;
+}
+.new-task-container .btn-primary{
+    background: #3B5998;
+    color: rgb(255,255,255);
+    padding: 6px 12px;
+    font-size: 18px;
+    height: 100%; 
+    float: right; 
+}
+.form-control{
+      height: 20px;
+      padding: 6px 12px;
+      font-size: 18px;
+      line-height: 1.42857143;
+      color: #555555;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: calc(100% - 122px);  
+}
+/*Tasks list*/
+.tasks-container ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single-task{
+    margin-bottom: 12px;
+}
+.toggle-complete-btn  {
+    background: #FFF;
+    padding: 6px 12px;
+    font-size: 18px;
+    height: 100%; 
+    float: left;
+}
+.delete-task-btn{
+    background: #d9534f;
+    color: #FFF;
+    padding: 6px 12px;
+    font-size: 18px;
+    height: 100%;
+}
+toggle-complete-btn:hover, .toggle-complete-btn:focus, .toggle-complete-btn:active{
+    color:#fff;
+    background-color: mediumseagreen;
+    border-color:#285e8e;
+}
